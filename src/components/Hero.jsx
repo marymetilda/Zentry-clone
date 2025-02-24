@@ -114,7 +114,7 @@ const Hero = () => {
             id="next-video"
             muted
             loop
-            // autoPlay
+            autoPlay
             ref={nextVideoRef}
             src={getVideoSrc(currentIndex)}
           />
@@ -125,7 +125,7 @@ const Hero = () => {
             src={getVideoSrc(
               currentIndex === totalVideos - 1 ? 1 : currentIndex
             )}
-            // autoPlay
+            autoPlay
             className="absolute left-0 top-0 size-full object-cover object-center"
             onLoadedData={handleVideoLoad}
           />
